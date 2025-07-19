@@ -7,12 +7,12 @@ st.caption("Select a model and start chatting!")
 
 # --- Model selection ---
 models = {
-    "LLaMA 2 (7B Chat)": "meta-llama/Llama-2-7b-chat-hf",
-    "Mistral 7B Instruct": "mistralai/Mistral-7B-Instruct-v0.1",
-    "Falcon 7B Instruct": "tiiuae/falcon-7b-instruct",
+    "GPT2 (small)": "gpt2",
+    "DistilGPT2": "distilgpt2",
+    "GPT-Neo 1.3B": "EleutherAI/gpt-neo-1.3B",
     "GPT-J 6B": "EleutherAI/gpt-j-6B",
-    "Bloom 1B1": "bigscience/bloom-1b1",
-    "Zephyr 7B Alpha": "HuggingFaceH4/zephyr-7b-alpha"
+    "Bloom 560M": "bigscience/bloom-560m",
+    "Flan-T5 Base (Instruction)": "google/flan-t5-base"
 }
 
 model_choice = st.selectbox("Select a Model", list(models.keys()))
